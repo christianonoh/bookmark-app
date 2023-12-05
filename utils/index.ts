@@ -1,6 +1,9 @@
-import Feature1 from '@/public/images/illustration-features-tab-1.svg'
-import Feature2 from '@/public/images/illustration-features-tab-2.svg'
-import Feature3 from '@/public/images/illustration-features-tab-3.svg'
+import Feature1 from '@/public/images/illustration-features-tab-1.svg';
+import Feature2 from '@/public/images/illustration-features-tab-2.svg';
+import Feature3 from '@/public/images/illustration-features-tab-3.svg';
+import Chrome from '@/public/images/logo-chrome.svg';
+import Firefox from '@/public/images/logo-firefox.svg';
+import Opera from '@/public/images/logo-opera.svg';
 
 
 export const cx = (...classNames: (string | undefined)[]) => classNames.filter(Boolean).join(' ');
@@ -41,5 +44,23 @@ export const features = [
     content: 'Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.',
     key: 3,
     img: Feature3
+  }
+]
+
+export const extentions = [
+  {
+    heading: 'Add to Chrome',
+    img: Chrome,
+    min_version: 'Minimum version 62',
+  },
+  {
+    heading: 'Add to Firefox',
+    img: Firefox,
+    min_version: 'Minimum version 55',
+  },
+  {
+    heading: 'Add to Opera',
+    img: Opera,
+    min_version: 'Minimum version 46',
   }
 ]
