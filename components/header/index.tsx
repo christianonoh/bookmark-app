@@ -1,7 +1,5 @@
 "use client";
 
-import Image from "next/image";
-// import Logo from '@/public/images/logo-bookmark.svg'
 import { cx, navLinks } from "@/utils";
 import Link from "next/link";
 import Button from "../shared/Button";
