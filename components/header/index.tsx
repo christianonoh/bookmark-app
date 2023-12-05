@@ -8,13 +8,15 @@ import Button from "../shared/Button";
 import { Twirl as Hamburger } from "hamburger-react";
 import { useState } from "react";
 import { FacebookIcon, Logo, TwitterIcon } from "../icons";
+import { useScrollPosition } from "../hooks";
 
 const Header = () => {
   const [toggled, setToggled] = useState(false);
+  const scrollPosition = useScrollPosition();
 
   return (
-    <header>
-      <div className="relative max-w-6xl mx-auto flex items-center justify-between gap-8 px-5 py-4 md:py-12">
+    <header className={cx(scrollPosition > 0 ? 'sticky top-0 z-20 bg-white/80 backdrop-blur-md border-b border-gray-light' : '')}>
+      <div className="relative max-w-6xl mx-auto flex items-center justify-between gap-8 px-5 md:px-10 py-4 md:py-8">
         <Logo className={cx(toggled ? "hidden" : "block", "h-8 w-auto")} />
         <Logo
           className={cx(toggled ? "block" : "hidden", "h-8 w-auto z-30")}
@@ -22,7 +24,7 @@ const Header = () => {
         />
         <nav>
           {/* Desktop Navigation  */}
-          <span className="hidden md:flex gap-12 items-center uppercase text-gray-dark text-xs tracking-widest font-semibold">
+          <span className="hidden md:flex gap-12 items-center uppercase text-gray-dark text-sm tracking-widest font-medium">
             {navLinks.map(({ name, path }) => (
               <Link href={path} key={name} className="hover:text-red transition-all duration-200 ease-in-out">
                 {name}
@@ -36,7 +38,7 @@ const Header = () => {
           </span>
 
           {/* Mobile Navigation  */}
-          <span className="flex md:hidden gap-12 items-center uppercase text-gray-dark text-xs tracking-widest font-semibold">
+          <span className="flex md:hidden gap-12 items-center uppercase text-gray-dark text-sm tracking-widest font-medium">
             <span className={cx(toggled ? "text-white" : "", "text-dark z-30")}>
               <Hamburger
                 toggled={toggled}
