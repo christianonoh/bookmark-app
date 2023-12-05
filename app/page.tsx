@@ -1,4 +1,5 @@
 import ExtensionSection from '@/components/extention'
+import FAQs from '@/components/faq'
 import FeaturesSection from '@/components/features'
 import HomeCover from '@/components/home-cover'
 
@@ -8,6 +9,7 @@ export default function Home() {
       <HomeCover />
       <FeaturesSection />
       <ExtensionSection />
+      <FAQs />
     </main>
   )
 }
