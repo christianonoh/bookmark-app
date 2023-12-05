@@ -1,9 +1,18 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Inter, Rubik } from 'next/font/google'
 import '@/styles/globals.css'
 import Header from '@/components/header'
+import { cx } from '@/utils'
 
 const inter = Inter({ subsets: ['latin'] })
+
+const rubik = Rubik(
+  {
+    subsets: ["latin"],
+    display: "swap",
+    variable: "--font-rubik",
+  }
+)
 
 export const metadata: Metadata = {
   title: 'Bookmark app',
@@ -24,7 +33,7 @@ export default function RootLayout({
         href="/images/favicon-32x32.png"
       />
       </head>
-      <body className={inter.className}>
+      <body className={cx(rubik.variable, 'font-rubik')}>
         <Header />
         {children}
       </body>

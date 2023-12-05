@@ -16,10 +16,13 @@ const config: Config = {
         red: '#FA5959',
         gray: {
           light: '#E8EAF6',
-          medium: '#a09fa4',
+          medium: '#9194a11',
           dark: '#3a393e',
         }
-      }
+      },
+      fontFamily: {
+        rubik: ['var(--font-rubik)'],
+      },
     },
   },
   plugins: [],
