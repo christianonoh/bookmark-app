@@ -14,7 +14,7 @@ const Header = () => {
 
   return (
     <header>
-      <div className="relative max-w-6xl mx-auto flex items-center justify-between gap-8 px-5 py-12">
+      <div className="relative max-w-6xl mx-auto flex items-center justify-between gap-8 px-5 py-4 md:py-12">
         <Logo className={cx(toggled ? "hidden" : "block", "h-8 w-auto")} />
         <Logo
           className={cx(toggled ? "block" : "hidden", "h-8 w-auto z-30")}
@@ -31,7 +31,7 @@ const Header = () => {
             <Button
               title="Login"
               link="/login"
-              className="bg-red px-8 uppercase tracking-wider hover:bg-white hover:text-red hover:border-red"
+              className="bg-red px-8 text-xs uppercase tracking-wider hover:bg-white hover:text-red hover:border-red"
             />
           </span>
 
@@ -47,7 +47,7 @@ const Header = () => {
             <div
               className={cx(
                 toggled ? "scale-y-100 origin-top" : "scale-y-0 origin-top",
-                "flex flex-col justify-around w-full bg-dark/60 shadow-sm absolute z-10 left-0 height__screen transform transition-transform duration-300 ease-in-out top-0"
+                "flex flex-col justify-around w-full bg-dark/90 shadow-sm absolute z-10 left-0 height__screen transform transition-transform duration-300 ease-in-out top-0"
               )}
             >
               <span className="max-w-sm mx-auto flex flex-col w-full tracking-wider font-bold text-white text-lg px-5 mt-20">
