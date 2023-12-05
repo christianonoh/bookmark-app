@@ -16,7 +16,7 @@ const config: Config = {
         red: '#FA5959',
         gray: {
           light: '#E8EAF6',
-          medium: '#9194a11',
+          medium: 'hsl(229, 8%, 60%)',
           dark: '#3a393e',
         }
       },
