@@ -13,14 +13,14 @@ const Button = ({ title, link, className, external }: ButtonProps) => {
   if (external) {
     return (
       <a href={link} target="_blank" rel="noopener noreferrer">
-        <button className={cx('px-6 py-3 rounded-md bg-accent text-light font-medium text-xs',className)}>{title}</button>
+        <button className={cx('px-6 py-3 rounded-md bg-accent text-white font-medium text-xs border border-transparent transition-all duration-200 ease-in-out',className)}>{title}</button>
       </a>
     );
   }
 
   return (
     <Link href={link}>
-        <button className={cx('px-6 py-3 rounded-md bg-accent text-light font-semibold text-xs',className)}>{title}</button>
+        <button className={cx('px-6 py-3 rounded-md bg-accent text-white font-semibold text-xs border border-transparent transition-all duration-200 ease-in-out',className)}>{title}</button>
     </Link>
   )
 }
