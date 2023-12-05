@@ -33,7 +33,7 @@ export default function RootLayout({
         href="/images/favicon-32x32.png"
       />
       </head>
-      <body className={cx(rubik.variable, 'font-rubik')}>
+      <body className={cx(rubik.variable, 'text-lg font-rubik')}>
         <Header />
         {children}
       </body>
