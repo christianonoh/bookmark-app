@@ -73,7 +73,7 @@ export const TwitterIcon = (props: SVGProps<SVGSVGElement>) => (
 
 export const ArrowDownIcon = (props: SVGProps<SVGSVGElement>) => (
   <svg xmlns="http://www.w3.org/2000/svg" width={18} height={12} viewBox="0 0 18 12" className={cx(props.className, "w-full h-auto")} {...props}>
-    <path fill="none" stroke="#5267DF" strokeWidth={3} d="m1 1 8 8 8-8" />
+    <path fill="none" stroke={props.stroke ? props.stroke : "#5267DF"} strokeWidth={3} d="m1 1 8 8 8-8" />
   </svg>
 );
 
