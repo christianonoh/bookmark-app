@@ -6,9 +6,9 @@ import Button from "../shared/Button";
 
 const HomeCover = () => {
   return (
-    <section className="h-full lg:h-[80vh] flex flex-col md:flex-row py-16 items-center gap-4 border max-w-[1440px] mx-auto">
+    <section className="h-full lg:h-[80vh] flex flex-col md:flex-row py-16 items-center gap-4 max-w-[1440px] mx-auto">
     <div className="w-full md:w-1/2 h-full flex justify-center relative px-5 md:pr-10 md:order-2 mb-24 md:mb-0">
-      <Image src={heroImage} alt="hero" className="object-contain" />
+      <Image src={heroImage} priority alt="hero" className="object-contain" />
       <Image
         src={heroBg}
         alt="hero"
