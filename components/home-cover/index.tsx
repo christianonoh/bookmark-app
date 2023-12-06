@@ -16,8 +16,8 @@ const HomeCover = () => {
       />
     </div>
       <div className="w-full md:w-1/2 px-5 md:order-1 md:pl-10">
-        <div className="max-w-md mx-auto text-center md:text-left">
-          <h1 className="text-4xl lg:text-5xl text-dark font-bold mb-8">
+        <div className="max-w-lg mx-auto text-center md:text-left">
+          <h1 className="text-3xl lg:text-5xl text-dark font-bold mb-8">
             A Simple Bookmark Manager
           </h1>
           <p className="text-lg text-gray-medium leading-relaxed mb-8">
