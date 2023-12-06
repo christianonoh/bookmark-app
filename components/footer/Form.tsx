@@ -66,7 +66,7 @@ const NewsletterForm: React.FC = () => {
               {errors.email && (
                 <>
                   <ErrorIcon className="h-5 w-5 absolute top-1/3 -translate-y-1/2 right-2 text-red" />
-                  <span className="text-white bg-red text-sm italic p-1 w-full">
+                  <span className="text-white bg-red text-sm italic p-1 w-full rounded-b-md">
                     {errors.email.message}
                   </span>
                 </>
